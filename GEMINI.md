@@ -20,4 +20,6 @@ This directory  contains documentation for Ascend C operator development, based 
 
 # TASK
 
-完全按照文档的结构，将嵌入markdown的html语法转换为Markdown语法，并且不要对其中的内容做任何改动。文档顶部有用以记录原始文档的链接的metadata，根据原始文档的链接，将文档中使用相对路径的链接/图片补全为完整url。对于源码中的表格元素(<table>)，直接在markdown中嵌入html源码即可，但是需要移除标签中的id
+我需要你完成如下两项任务，请仔细阅读并完全遵照指示进行：
+  1. 修改目录:`Ascend C 算子开发` `Ascend C API` `Ascend C 最佳实践` `Ascend C 最佳实践`下的每一个markdown文档，完全按照文档的结构，将原本嵌入markdown的html语法转换为Markdown语法，并且不要对其中的内容做任何改动，对于源码中的表格元素(<table>)，直接在markdown中嵌入html源码即可，但是需要移除标签中的id等无关的属性。这项任务要求**手动**处理所有文档，不要使用脚本及外部文档转换工具(python脚本、pandoc等)来完成这个任务，因为它们可能会引入格式错误，不计时间成本
+  2. 根据 docs.json，将所有markdown文档中出现在json文件中的网页链接，替换为对应的markdown文件链接的相对路径，这项任务可以使用脚本完成
