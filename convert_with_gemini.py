@@ -10,33 +10,69 @@ import os
 import re
 import json
 from pathlib import Path
+import tempfile
 
 
-def convert_html_to_markdown(content, model="gemini-2.5-flash", verbose=True, output_file=None, debug=False, project=None):
+def convert_html_to_markdown(content, model=None, debug=False, project=None, use_qwen=False):
     """
-    使用 Gemini CLI 将 HTML 内容转换为 Markdown
+    使用 Gemini CLI 或 Qwen Code 将 HTML 内容转换为 Markdown（从内容字符串）
     
     Args:
         content: 要转换的 HTML 内容（字符串）
-        model: Gemini 模型名称，默认 "gemini-2.5-flash"
-        verbose: 是否显示详细进度信息，默认 True
-        output_file: 输出文件路径，如果指定则实时写入文件
+        model: 模型名称，默认 None（由 CLI 决定）
         debug: 调试模式，显示原始输出
-        project: Google Cloud Project ID，如果未指定则从环境变量获取
+        project: Google Cloud Project ID，如果未指定则从环境变量获取（仅 Gemini）
+        use_qwen: 使用 Qwen Code 而非 Gemini CLI
     
     Returns:
         str: 转换后的 Markdown 内容，失败时返回 None
     """
+    # 创建临时文件
+    with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', suffix='.md', delete=False) as tmp_file:
+        tmp_file.write(content)
+        tmp_file_path = tmp_file.name
+    
+    try:
+        # 调用文件版本的函数
+        result = convert_html_to_markdown_from_file(tmp_file_path, model=model, debug=debug, project=project, use_qwen=use_qwen)
+        return result
+    finally:
+        # 清理临时文件
+        try:
+            os.unlink(tmp_file_path)
+        except:
+            pass
+
+
+def convert_html_to_markdown_from_file(file_path, model=None, debug=False, project=None, use_qwen=False):
+    """
+    使用 Gemini CLI 或 Qwen Code 将 HTML 内容转换为 Markdown（从文件）
+    
+    Args:
+        file_path: 要转换的文件路径
+        model: 模型名称，默认 None（由 CLI 决定）
+        debug: 调试模式，显示原始输出
+        project: Google Cloud Project ID，如果未指定则从环境变量获取（仅 Gemini）
+        use_qwen: 使用 Qwen Code 而非 Gemini CLI
+    
+    Returns:
+        str: 转换后的 Markdown 内容，失败时返回 None
+    """
+    # 检查文件是否存在
+    if not os.path.exists(file_path):
+        print(f"错误: 文件不存在 {file_path}")
+        return None
+    
     # 构建系统提示词
     system_prompt = """用户会给出一个内嵌HTML标签的Markdown文档，严格遵守以下规则对它做出修改:
-1. 保留原metadata,添加新metadata: `converted: true`,不要遗漏metadata后的`---`
+1. 保留原本的metadata,添加新metadata: `converted: true`,不要遗漏metadata后的`---`
 2. 不要修改文档的结构,不要对内容做任何改动
 3. 对于源码中的HTML table,直接在Markdown中嵌入整个table部分的原始HTML源码即可,但是需要移除标签中的id等无关的属性并适当压缩行数(表格的一行写在源码的同一行里),不需要引用在代码块中;代码块可能以<table class="highlighttable">的形式存储,这种方式存储的代码块的外层div会标明编程语言(如<div codetype="Cpp">),需要转换为Markdown代码块
 4. 将其它内嵌的HTML语法转换为对应的Markdown语法
 5. 在Markdown中嵌入HTML时,HTML本身不能包含Markdown语法(比如不能有`**`在HTML里);不要在Markdown代码块中使用粗体、斜体等语法(比如不能有`**`在代码块里)
 6. 对于多层的Markdown嵌套结构,确保正确处理缩进和层级关系,缩进使用2个空格表示一个层级
 7. 原文中可能用abcde等字母表示列表项,将它们转为对应的数字列表项(1., 2., 3., ...)
-8. 如果文章以`父主题：...`结尾,将其提取到metadata中的`parent_topic`字段中,并删除正文中的该行
+8. 如果文章以`父主题：...`结尾,删除正文中的该行
 
 回复时,只需要回复Markdown源码即可,不需要引用在代码块里。
 
@@ -44,27 +80,41 @@ def convert_html_to_markdown(content, model="gemini-2.5-flash", verbose=True, ou
 
 """
     
-    # 构建完整的 prompt
-    full_prompt = system_prompt + content
-    
     # 转义单引号以避免 shell 问题
-    escaped_prompt = full_prompt.replace("'", "'\\''")
+    escaped_prompt = system_prompt.replace("'", "'\\''")
+    escaped_file_path = file_path.replace("'", "'\\''")
     
-    # 获取 Google Cloud Project ID
-    gcp_project = project if project else os.environ.get('GOOGLE_CLOUD_PROJECT', '')
+    # 构建命令 - 使用 cat 和管道符传入文件内容
+    # 根据参数构建命令
+    cmd_parts = [f"cat '{escaped_file_path}' |"]
     
-    # 构建命令
-    if gcp_project:
-        cmd = f"GOOGLE_CLOUD_PROJECT={gcp_project} gemini --model {model} --prompt '{escaped_prompt}'"
-    else:
-        cmd = f"gemini --model {model} --prompt '{escaped_prompt}'"
+    # 确定使用的 CLI 工具
+    cli_name = "qwen" if use_qwen else "gemini"
+    cli_display = "Qwen Code" if use_qwen else "Gemini CLI"
     
-    if verbose and not debug:
-        print(f"正在调用 Gemini CLI (模型: {model})...")
+    # 添加 GOOGLE_CLOUD_PROJECT 环境变量（如果指定且使用 Gemini）
+    if project and not use_qwen:
+        cmd_parts.append(f"GOOGLE_CLOUD_PROJECT={project}")
+    
+    # 添加 CLI 命令
+    cmd_parts.append(cli_name)
+    
+    # 添加 model 参数（如果指定）
+    if model:
+        cmd_parts.append(f"--model {model}")
+    
+    # 添加 prompt
+    cmd_parts.append(f"--prompt '{escaped_prompt}'")
+    
+    cmd = " ".join(cmd_parts)
+    
+    if not debug:
+        model_info = f" (模型: {model})" if model else ""
+        print(f"正在调用 {cli_display}{model_info}...")
     
     if debug:
         print(f"[DEBUG] 命令: {cmd[:200]}...")
-        print(f"[DEBUG] Prompt 长度: {len(full_prompt)} 字符")
+        print(f"[DEBUG] 文件路径: {file_path}")
     
     try:
         # 执行命令
@@ -82,7 +132,7 @@ def convert_html_to_markdown(content, model="gemini-2.5-flash", verbose=True, ou
         
         if result.returncode != 0:
             print(f"错误: Gemini CLI 执行失败")
-            if debug or verbose:
+            if debug:
                 print(f"stderr: {result.stderr}")
             return None
         
@@ -133,14 +183,7 @@ def convert_html_to_markdown(content, model="gemini-2.5-flash", verbose=True, ou
             print(f"[DEBUG] 转换后内容长度: {len(converted_content)} 字符")
             print(f"[DEBUG] 转换后内容前200字符: {converted_content[:200]}")
         
-        # 如果指定了输出文件，写入文件
-        if output_file:
-            with open(output_file, 'w', encoding='utf-8') as f:
-                f.write(converted_content)
-            if verbose and not debug:
-                print(f"✓ 已保存到: {output_file}")
-        
-        if verbose and not debug:
+        if not debug:
             line_count = converted_content.count('\n') + 1
             print(f"转换完成! 输出 {line_count} 行 {len(converted_content)} 字符")
         
@@ -177,17 +220,18 @@ def check_already_converted(content):
     return False
 
 
-def convert_file_with_gemini(file_path, model="gemini-2.5-flash", output_path=None, force=False, debug=False, project=None):
+def convert_file_with_gemini(file_path, model=None, output_path=None, force=False, debug=False, project=None, use_qwen=False):
     """
-    使用 Gemini CLI 将文件转换为 Markdown
+    使用 Gemini CLI 或 Qwen Code 将文件转换为 Markdown
     
     Args:
         file_path: 要转换的文件路径
-        model: Gemini 模型名称
+        model: 模型名称，默认 None（由 CLI 决定）
         output_path: 输出文件路径
         force: 强制转换，即使已标记为已转换
         debug: 调试模式
-        project: Google Cloud Project ID
+        project: Google Cloud Project ID（仅 Gemini）
+        use_qwen: 使用 Qwen Code 而非 Gemini CLI
     
     Returns:
         str: 转换后的 Markdown 内容，失败时返回 None
@@ -198,7 +242,7 @@ def convert_file_with_gemini(file_path, model="gemini-2.5-flash", output_path=No
         print(f"错误: 文件不存在 {file_path}")
         return None
     
-    # 读取文件内容
+    # 读取文件内容检查是否已转换
     print(f"读取文件: {file_path}")
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -213,19 +257,30 @@ def convert_file_with_gemini(file_path, model="gemini-2.5-flash", output_path=No
         return 'skipped'
     
     # 调用核心转换函数
+    cli_display = "Qwen Code" if use_qwen else "Gemini CLI"
     if not debug:
-        print(f"调用模型: {model}")
-        print(f"文件大小: {len(content)} 字符")
+        model_info = f"调用模型: {model}" if model else f"调用 {cli_display}"
+        print(model_info)
+        # 获取文件大小
+        file_size = os.path.getsize(file_path)
+        print(f"文件大小: {file_size} 字节")
     else:
-        print(f"[DEBUG] 调用模型: {model}")
-        print(f"[DEBUG] 文件大小: {len(content)} 字符")
+        model_info = f"调用模型: {model}" if model else f"调用 {cli_display}"
+        print(f"[DEBUG] {model_info}")
+        file_size = os.path.getsize(file_path)
+        print(f"[DEBUG] 文件大小: {file_size} 字节")
     
     try:
-        converted_content = convert_html_to_markdown(content, model, verbose=True, output_file=output_path, debug=debug, project=project)
+        converted_content = convert_html_to_markdown_from_file(file_path, model, debug=debug, project=project, use_qwen=use_qwen)
         
         if not converted_content:
             print("警告: 模型返回空内容")
             return None
+        
+        # 写入输出文件
+        if output_path:
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(converted_content)
         
         return converted_content
         
@@ -287,18 +342,19 @@ def collect_files_from_json(json_path, limit=None):
     return file_paths
 
 
-def process_files(file_paths, model="gemini-2.5-flash", output_dir=None, overwrite=False, force=False, debug=False, project=None):
+def process_files(file_paths, model=None, output_dir=None, overwrite=False, force=False, debug=False, project=None, use_qwen=False):
     """
     批量处理多个文件
     
     Args:
         file_paths: 文件路径列表
-        model: Gemini 模型名称
+        model: 模型名称，默认 None（由 CLI 决定）
         output_dir: 输出目录（None表示原地覆盖）
         overwrite: 是否覆盖原文件
         force: 强制转换，即使文件已标记为已转换
         debug: 调试模式
-        project: Google Cloud Project ID
+        project: Google Cloud Project ID（仅 Gemini）
+        use_qwen: 使用 Qwen Code 而非 Gemini CLI
     
     Returns:
         tuple: (成功数, 失败数, 跳过数)
@@ -335,7 +391,7 @@ def process_files(file_paths, model="gemini-2.5-flash", output_dir=None, overwri
         
         # 转换文件
         try:
-            converted_content = convert_file_with_gemini(file_path, model, output_path=output_path, force=force, debug=debug, project=project)
+            converted_content = convert_file_with_gemini(file_path, model, output_path=output_path, force=force, debug=debug, project=project, use_qwen=use_qwen)
             
             if converted_content == 'skipped':
                 skipped += 1
@@ -362,7 +418,12 @@ def process_files(file_paths, model="gemini-2.5-flash", output_dir=None, overwri
 
 def main():
     parser = argparse.ArgumentParser(
-        description='使用 Google Gemini CLI 将 HTML 转换为 Markdown'
+        description='使用 Google Gemini CLI 或 Qwen Code CLI 将 HTML 转换为 Markdown'
+    )
+    parser.add_argument(
+        'file_path',
+        nargs='?',
+        help='要转换的文件路径（可选，如果使用 --from-json）'
     )
     parser.add_argument(
         '-o', '--output',
@@ -370,12 +431,17 @@ def main():
     )
     parser.add_argument(
         '-m', '--model',
-        default='gemini-2.5-flash',
-        help='Gemini 模型名称（默认: gemini-2.5-flash）'
+        default=None,
+        help='模型名称（默认：由 CLI 决定）'
     )
     parser.add_argument(
         '-p', '--project',
-        help='Google Cloud Project ID（如果未指定，则从环境变量 GOOGLE_CLOUD_PROJECT 获取）'
+        help='Google Cloud Project ID（仅 Gemini，如果未指定，则从环境变量 GOOGLE_CLOUD_PROJECT 获取）'
+    )
+    parser.add_argument(
+        '--use-qwen',
+        action='store_true',
+        help='使用 Qwen Code CLI 而非 Gemini CLI（默认使用 Gemini）'
     )
     parser.add_argument(
         '--from-json',
@@ -420,8 +486,11 @@ def main():
         if args.limit:
             print(f"限制处理前 {args.limit} 个文件")
         file_paths = collect_files_from_json(json_path, args.limit)
+    elif args.file_path:
+        # 单文件转换
+        file_paths = [os.path.abspath(args.file_path)]
     else:
-        print("错误: 必须使用 --from-json 指定 JSON 文件")
+        print("错误: 必须指定文件路径或使用 --from-json 指定 JSON 文件")
         sys.exit(1)
     
     if not file_paths:
@@ -432,16 +501,47 @@ def main():
         print(f"[DRY RUN] 找到 {len(file_paths)} 个文件:")
         for i, fp in enumerate(file_paths, 1):
             print(f"  [{i}] {fp}")
-        print(f"\n模型: {args.model}")
+        cli_display = "Qwen Code" if args.use_qwen else "Gemini CLI"
+        model_info = f"模型: {args.model}" if args.model else f"模型: 由 {cli_display} 决定"
+        print(f"\nCLI: {cli_display}")
+        print(f"{model_info}")
         print(f"覆盖模式: {'是' if args.overwrite else '否'}")
         print(f"强制转换: {'是' if args.force else '否'}")
         if args.limit:
             print(f"限制数量: {args.limit}")
         sys.exit(0)
     
-    # 批量处理文件
-    output_dir = args.output if args.output else None
-    process_files(file_paths, args.model, output_dir, args.overwrite, args.force, args.debug, args.project)
+    # 处理文件
+    if len(file_paths) == 1 and args.file_path:
+        # 单文件处理
+        single_file = file_paths[0]
+        print(f"处理单个文件: {single_file}")
+        
+        # 确定输出文件路径
+        if args.output:
+            output_path = os.path.abspath(args.output)
+        elif args.overwrite:
+            output_path = single_file
+        else:
+            base_path = os.path.splitext(single_file)[0]
+            output_path = f"{base_path}.converted.md"
+        
+        # 转换文件
+        converted_content = convert_file_with_gemini(single_file, args.model, output_path=output_path, force=args.force, debug=args.debug, project=args.project, use_qwen=args.use_qwen)
+        
+        if converted_content == 'skipped':
+            print("文件已转换过，使用 --force 强制转换")
+            sys.exit(0)
+        
+        if converted_content is None:
+            print("转换失败")
+            sys.exit(1)
+        
+        print("\n完成!")
+    else:
+        # 批量处理文件
+        output_dir = args.output if args.output else None
+        process_files(file_paths, args.model, output_dir, args.overwrite, args.force, args.debug, args.project, args.use_qwen)
 
 
 if __name__ == '__main__':
