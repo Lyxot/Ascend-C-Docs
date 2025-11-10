@@ -1,0 +1,2019 @@
+[
+  {
+    "main_section": "算子开发工具",
+    "full_title": "1. 简介",
+    "filename": "1. 简介.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0002.html",
+    "parent_sections": []
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "2. 环境准备",
+    "filename": "2. 环境准备.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0003.html",
+    "parent_sections": []
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.1. 工具概述",
+    "filename": "3.1. 工具概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0006.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.2. 使用前准备",
+    "filename": "3.2. 使用前准备.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0007.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.1. 原理概述",
+    "filename": "3.3.1. 原理概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0152.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.2. 算子特性建模",
+    "filename": "3.3.2. 算子特性建模.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0009.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.3. 算子计算搬运规格分析",
+    "filename": "3.3.3. 算子计算搬运规格分析.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0010.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.4. 极限性能分析",
+    "filename": "3.3.4. 极限性能分析.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0011.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.5. 算子tiling初步设计",
+    "filename": "3.3.5. 算子tiling初步设计.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0012.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.1. 接口列表",
+    "filename": "3.3.6.1. 接口列表.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0001.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.2.1. Chip",
+    "filename": "3.3.6.2.1. Chip.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0003.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.2. 基础功能接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.2.2. Core",
+    "filename": "3.3.6.2.2. Core.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0004.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.2. 基础功能接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.2.3. Tensor",
+    "filename": "3.3.6.2.3. Tensor.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0005.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.2. 基础功能接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.2.4. Tensor.load",
+    "filename": "3.3.6.2.4. Tensor.load.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0006.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.2. 基础功能接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.3.1. set_flag",
+    "filename": "3.3.6.3.1. set_flag.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_00073.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.3. 同步类指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.3.2. wait_flag",
+    "filename": "3.3.6.3.2. wait_flag.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_00074.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.3. 同步类指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.1. mmad",
+    "filename": "3.3.6.4.1. mmad.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0007.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.2. vadd",
+    "filename": "3.3.6.4.2. vadd.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0008.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.3. vbrcb",
+    "filename": "3.3.6.4.3. vbrcb.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0009.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.4. vconv",
+    "filename": "3.3.6.4.4. vconv.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0010.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.5. vconv_deq",
+    "filename": "3.3.6.4.5. vconv_deq.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0011.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.6. vconv_vdeq",
+    "filename": "3.3.6.4.6. vconv_vdeq.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0012.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.7. vector_dup",
+    "filename": "3.3.6.4.7. vector_dup.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0013.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.8. vexp",
+    "filename": "3.3.6.4.8. vexp.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0014.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.9. vln",
+    "filename": "3.3.6.4.9. vln.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0015.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.10. vmax",
+    "filename": "3.3.6.4.10. vmax.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0016.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.11. vmul",
+    "filename": "3.3.6.4.11. vmul.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0017.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.12. vmuls",
+    "filename": "3.3.6.4.12. vmuls.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0018.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.13. vsub",
+    "filename": "3.3.6.4.13. vsub.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0019.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.14. vdiv",
+    "filename": "3.3.6.4.14. vdiv.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0020.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.15. vcadd",
+    "filename": "3.3.6.4.15. vcadd.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0021.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.16. vabs",
+    "filename": "3.3.6.4.16. vabs.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0022.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.17. vaddrelu",
+    "filename": "3.3.6.4.17. vaddrelu.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0023.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.18. vaddreluconv",
+    "filename": "3.3.6.4.18. vaddreluconv.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0024.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.19. vadds",
+    "filename": "3.3.6.4.19. vadds.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0025.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.20. vand",
+    "filename": "3.3.6.4.20. vand.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0026.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.21. vaxpy",
+    "filename": "3.3.6.4.21. vaxpy.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0027.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.22. vbitsort",
+    "filename": "3.3.6.4.22. vbitsort.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0028.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.23. vcgadd",
+    "filename": "3.3.6.4.23. vcgadd.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0029.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.24. vcgmax",
+    "filename": "3.3.6.4.24. vcgmax.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0030.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.25. vcgmin",
+    "filename": "3.3.6.4.25. vcgmin.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0031.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.26. vcmax",
+    "filename": "3.3.6.4.26. vcmax.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0032.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.27. vcmin",
+    "filename": "3.3.6.4.27. vcmin.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0033.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.28. vcmp_xxx",
+    "filename": "3.3.6.4.28. vcmp_xxx.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0034.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.29. vcmpv_xxx",
+    "filename": "3.3.6.4.29. vcmpv_xxx.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0035.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.30. vcmpvs_xxx",
+    "filename": "3.3.6.4.30. vcmpvs_xxx.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0036.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.31. vcopy",
+    "filename": "3.3.6.4.31. vcopy.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0037.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.32. vcpadd",
+    "filename": "3.3.6.4.32. vcpadd.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0038.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.33. vgather",
+    "filename": "3.3.6.4.33. vgather.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0039.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.34. vgatherb",
+    "filename": "3.3.6.4.34. vgatherb.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0040.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.35. vlrelu",
+    "filename": "3.3.6.4.35. vlrelu.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0041.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.36. vmadd",
+    "filename": "3.3.6.4.36. vmadd.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0042.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.37. vmaddrelu",
+    "filename": "3.3.6.4.37. vmaddrelu.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0043.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.38. vmaxs",
+    "filename": "3.3.6.4.38. vmaxs.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0044.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.39. vmin",
+    "filename": "3.3.6.4.39. vmin.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0045.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.40. vmins",
+    "filename": "3.3.6.4.40. vmins.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0046.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.41. vmla",
+    "filename": "3.3.6.4.41. vmla.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0047.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.42. vmrgsort",
+    "filename": "3.3.6.4.42. vmrgsort.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0048.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.43. vmulconv",
+    "filename": "3.3.6.4.43. vmulconv.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0049.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.44. vnot",
+    "filename": "3.3.6.4.44. vnot.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0050.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.45. vor",
+    "filename": "3.3.6.4.45. vor.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0051.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.46. vrec",
+    "filename": "3.3.6.4.46. vrec.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0052.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.47. vreduce",
+    "filename": "3.3.6.4.47. vreduce.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0053.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.48. vreducev2",
+    "filename": "3.3.6.4.48. vreducev2.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0054.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.49. vrelu",
+    "filename": "3.3.6.4.49. vrelu.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0055.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.50. vrsqrt",
+    "filename": "3.3.6.4.50. vrsqrt.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0056.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.51. vsel",
+    "filename": "3.3.6.4.51. vsel.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0057.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.52. vshl",
+    "filename": "3.3.6.4.52. vshl.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0058.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.53. vshr",
+    "filename": "3.3.6.4.53. vshr.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0059.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.54. vsqrt",
+    "filename": "3.3.6.4.54. vsqrt.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0060.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.55. vsubrelu",
+    "filename": "3.3.6.4.55. vsubrelu.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0061.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.56. vsubreluconv",
+    "filename": "3.3.6.4.56. vsubreluconv.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0062.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.3.6.4.57. vtranspose",
+    "filename": "3.3.6.4.57. vtranspose.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdevapi_16_0063.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.3. 性能建模",
+      "3.3.6. 对外接口使用说明",
+      "3.3.6.4. 指令接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.4.1. 功能介绍",
+    "filename": "3.4.1. 功能介绍.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0173.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.4. 调用msOpGen算子工程"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.4.2. 调用示例",
+    "filename": "3.4.2. 调用示例.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0174.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.4. 调用msOpGen算子工程"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.4.3.1. mskpp.tiling_func",
+    "filename": "3.4.3.1. mskpp.tiling_func.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0185.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.4. 调用msOpGen算子工程",
+      "3.4.3. 接口列表"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.4.3.2. mskpp.get_kernel_from_binary",
+    "filename": "3.4.3.2. mskpp.get_kernel_from_binary.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0186.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.4. 调用msOpGen算子工程",
+      "3.4.3. 接口列表"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.1. 功能介绍",
+    "filename": "3.5.1. 功能介绍.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0154.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.2. 快速入门",
+    "filename": "3.5.2. 快速入门.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0155.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.3. 自动调优示例",
+    "filename": "3.5.3. 自动调优示例.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0168.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.4.1. autotune",
+    "filename": "3.5.4.1. autotune.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0163.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优",
+      "3.5.4. 接口列表"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.4.2. code_gen",
+    "filename": "3.5.4.2. code_gen.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0161.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优",
+      "3.5.4. 接口列表"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.4.3. compile",
+    "filename": "3.5.4.3. compile.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0162.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优",
+      "3.5.4. 接口列表"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.4.4. autotune_v2",
+    "filename": "3.5.4.4. autotune_v2.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0171.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优",
+      "3.5.4. 接口列表"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.4.5. compile_executable",
+    "filename": "3.5.4.5. compile_executable.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0170.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优",
+      "3.5.4. 接口列表"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.5.1. basic_matmul_autotune.py",
+    "filename": "3.5.5.1. basic_matmul_autotune.py.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0157.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优",
+      "3.5.5. 附录"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.5.2. jit_build.sh",
+    "filename": "3.5.5.2. jit_build.sh.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0164.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优",
+      "3.5.5. 附录"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.5.3. basic_matmul_executable_autotune.py",
+    "filename": "3.5.5.3. basic_matmul_executable_autotune.py.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0183.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优",
+      "3.5.5. 附录"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.5.5.4. jit_build_executable.sh",
+    "filename": "3.5.5.4. jit_build_executable.sh.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0182.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.5. 自动调优",
+      "3.5.5. 附录"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "3.6.1. 运行Kernel时提示权限错误",
+    "filename": "3.6.1. 运行Kernel时提示权限错误.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0166.html",
+    "parent_sections": [
+      "3. 算子设计（msKPP）",
+      "3.6. FAQ"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "4.1. 工具概述",
+    "filename": "4.1. 工具概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0018.html",
+    "parent_sections": [
+      "4. 算子工程创建（msOpGen）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "4.2. 使用前准备",
+    "filename": "4.2. 使用前准备.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0019.html",
+    "parent_sections": [
+      "4. 算子工程创建（msOpGen）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "4.3. 创建算子工程",
+    "filename": "4.3. 创建算子工程.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0021.html",
+    "parent_sections": [
+      "4. 算子工程创建（msOpGen）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "4.4. 算子开发",
+    "filename": "4.4. 算子开发.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0023.html",
+    "parent_sections": [
+      "4. 算子工程创建（msOpGen）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "4.5. 算子编译部署",
+    "filename": "4.5. 算子编译部署.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0024.html",
+    "parent_sections": [
+      "4. 算子工程创建（msOpGen）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "4.6. 查看算子仿真流水图",
+    "filename": "4.6. 查看算子仿真流水图.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0025.html",
+    "parent_sections": [
+      "4. 算子工程创建（msOpGen）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "4.7.1. Ascend C自定义算子开发实践",
+    "filename": "4.7.1. Ascend C自定义算子开发实践.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0027.html",
+    "parent_sections": [
+      "4. 算子工程创建（msOpGen）",
+      "4.7. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "5.1. 工具概述",
+    "filename": "5.1. 工具概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0029.html",
+    "parent_sections": [
+      "5. 算子测试（msOpST）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "5.2. 使用前准备",
+    "filename": "5.2. 使用前准备.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0030.html",
+    "parent_sections": [
+      "5. 算子测试（msOpST）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "5.3. 生成测试用例定义文件",
+    "filename": "5.3. 生成测试用例定义文件.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0032.html",
+    "parent_sections": [
+      "5. 算子测试（msOpST）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "5.4. 生成/执行测试用例",
+    "filename": "5.4. 生成_执行测试用例.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0033.html",
+    "parent_sections": [
+      "5. 算子测试（msOpST）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "5.5. 生成单算子上板测试框架",
+    "filename": "5.5. 生成单算子上板测试框架.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0034.html",
+    "parent_sections": [
+      "5. 算子测试（msOpST）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "5.6.1. 测试用例定义文件",
+    "filename": "5.6.1. 测试用例定义文件.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0036.html",
+    "parent_sections": [
+      "5. 算子测试（msOpST）",
+      "5.6. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.1. 工具概述",
+    "filename": "6.1. 工具概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0039.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.2. 使用前准备",
+    "filename": "6.2. 使用前准备.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0040.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.3. 内存检测",
+    "filename": "6.3. 内存检测.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0042.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.4. 竞争检测",
+    "filename": "6.4. 竞争检测.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0043.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.5. 未初始化检测",
+    "filename": "6.5. 未初始化检测.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0128.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.6.1. 检测内核调用符方式的Ascend C算子",
+    "filename": "6.6.1. 检测内核调用符方式的Ascend C算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0045.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.6. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.6.2. 检测API调用的单算子",
+    "filename": "6.6.2. 检测API调用的单算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0046.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.6. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.6.3. 检测PyTorch接口调用的算子",
+    "filename": "6.6.3. 检测PyTorch接口调用的算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0136.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.6. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.6.4. 检测CANN软件栈的内存",
+    "filename": "6.6.4. 检测CANN软件栈的内存.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0047.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.6. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.7.1. msSanitizer工具异常报告中未显示正确的文件名和行号",
+    "filename": "6.7.1. msSanitizer工具异常报告中未显示正确的文件名和行号.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0134.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.7. FAQ"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.7.2. msSanitizer工具使用\"--cce-enable-sanitizer -g\"编译算子时出现\"InputSection too large\"错误",
+    "filename": "6.7.2. msSanitizer工具使用\"--cce-enable-sanitizer -g\"编译算子时出现\"InputSection too large\"错误.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0135.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.7. FAQ"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.7.3. msSanitizer工具提示--cache-size异常",
+    "filename": "6.7.3. msSanitizer工具提示--cache-size异常.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0138.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.7. FAQ"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.1. 接口列表",
+    "filename": "6.8.1. 接口列表.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0150.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.1. sanitizerRtMalloc",
+    "filename": "6.8.2.1. sanitizerRtMalloc.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0050.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.2. sanitizerRtMallocCached",
+    "filename": "6.8.2.2. sanitizerRtMallocCached.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0051.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.3. sanitizerRtFree",
+    "filename": "6.8.2.3. sanitizerRtFree.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0052.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.4. sanitizerRtMemset",
+    "filename": "6.8.2.4. sanitizerRtMemset.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0053.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.5. sanitizerRtMemsetAsync",
+    "filename": "6.8.2.5. sanitizerRtMemsetAsync.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0054.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.6. sanitizerRtMemcpy",
+    "filename": "6.8.2.6. sanitizerRtMemcpy.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0055.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.7. sanitizerRtMemcpyAsync",
+    "filename": "6.8.2.7. sanitizerRtMemcpyAsync.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0056.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.8. sanitizerRtMemcpy2d",
+    "filename": "6.8.2.8. sanitizerRtMemcpy2d.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0057.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.9. sanitizerRtMemcpy2dAsync",
+    "filename": "6.8.2.9. sanitizerRtMemcpy2dAsync.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0058.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.10. sanitizerReportMalloc",
+    "filename": "6.8.2.10. sanitizerReportMalloc.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0059.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.2.11. sanitizerReportFree",
+    "filename": "6.8.2.11. sanitizerReportFree.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0060.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.2. sanitizer接口"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.3.1. mstx接口简介",
+    "filename": "6.8.3.1. mstx接口简介.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0143.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.3. 扩展接口（mstx）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.3.2. mstxDomainCreateA",
+    "filename": "6.8.3.2. mstxDomainCreateA.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0144.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.3. 扩展接口（mstx）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.3.3. mstxMemHeapRegister",
+    "filename": "6.8.3.3. mstxMemHeapRegister.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0145.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.3. 扩展接口（mstx）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.3.4. mstxMemRegionsRegister",
+    "filename": "6.8.3.4. mstxMemRegionsRegister.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0147.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.3. 扩展接口（mstx）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.3.5. mstxMemRegionsUnregister",
+    "filename": "6.8.3.5. mstxMemRegionsUnregister.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0148.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.3. 扩展接口（mstx）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "6.8.3.6. mstxMemHeapUnregister",
+    "filename": "6.8.3.6. mstxMemHeapUnregister.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0146.html",
+    "parent_sections": [
+      "6. 异常检测（msSanitizer）",
+      "6.8. 对外接口使用说明",
+      "6.8.3. 扩展接口（mstx）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.1. 工具概述",
+    "filename": "7.1. 工具概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0062.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.2. 使用前准备",
+    "filename": "7.2. 使用前准备.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0063.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.3. 指定Device ID（通算融合算子场景）",
+    "filename": "7.3. 指定Device ID（通算融合算子场景）.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0169.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.4. 断点设置",
+    "filename": "7.4. 断点设置.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0066.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.5. 内存与变量打印",
+    "filename": "7.5. 内存与变量打印.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0067.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.6. 单步调试",
+    "filename": "7.6. 单步调试.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0068.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.7. 中断运行",
+    "filename": "7.7. 中断运行.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0069.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.8. 核切换",
+    "filename": "7.8. 核切换.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0070.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.9. 读取寄存器",
+    "filename": "7.9. 读取寄存器.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0071.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.10. 调试信息展示",
+    "filename": "7.10. 调试信息展示.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0072.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.11. 解析异常算子dump文件",
+    "filename": "7.11. 解析异常算子dump文件.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0149.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.12.1. 上板调试vector算子",
+    "filename": "7.12.1. 上板调试vector算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0074.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）",
+      "7.12. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.12.2. 调用Ascend CL单算子",
+    "filename": "7.12.2. 调用Ascend CL单算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0075.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）",
+      "7.12. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.12.3. 调试PyTorch接口调用的算子",
+    "filename": "7.12.3. 调试PyTorch接口调用的算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0076.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）",
+      "7.12. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.12.4. 上板调试模板库的算子",
+    "filename": "7.12.4. 上板调试模板库的算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0184.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）",
+      "7.12. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.13.1. msDebug工具使用\"-O0 -g\"编译算子时，stack frame size超出限制",
+    "filename": "7.13.1. msDebug工具使用\"-O0 -g\"编译算子时，stack frame size超出限制.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0078.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）",
+      "7.13. FAQ"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.13.2. msDebug工具打印Tensor变量功能不可用，提示“unavailable”或“memory read failed”",
+    "filename": "7.13.2. msDebug工具打印Tensor变量功能不可用，提示“unavailable”或“memory read failed”.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0079.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）",
+      "7.13. FAQ"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.13.3. msDebug工具在容器环境中调试运行失败，提示需安装HDK驱动包",
+    "filename": "7.13.3. msDebug工具在容器环境中调试运行失败，提示需安装HDK驱动包.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0080.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）",
+      "7.13. FAQ"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.13.4. msDebug工具断点设置在核函数内，命中断点后执行continue命令，算子运行失败",
+    "filename": "7.13.4. msDebug工具断点设置在核函数内，命中断点后执行continue命令，算子运行失败.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0116.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）",
+      "7.13. FAQ"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "7.13.5. msDebug工具在docker中执行\"run\"命令运行程序后，提示“'A' packet returned an error: 8”",
+    "filename": "7.13.5. msDebug工具在docker中执行\"run\"命令运行程序后，提示“'A' packet returned an error: 8”.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0132.html",
+    "parent_sections": [
+      "7. 算子调试（msDebug）",
+      "7.13. FAQ"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.1. 工具概述",
+    "filename": "8.1. 工具概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0082.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.2. 使用前准备",
+    "filename": "8.2. 使用前准备.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0083.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.3. 工具使用",
+    "filename": "8.3. 工具使用.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_00851.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.4. 计算内存热力图",
+    "filename": "8.4. 计算内存热力图.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0086.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.5. Roofline瓶颈分析图",
+    "filename": "8.5. Roofline瓶颈分析图.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0119.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.6. Cache热力图",
+    "filename": "8.6. Cache热力图.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0158.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.7. 通算流水图",
+    "filename": "8.7. 通算流水图.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0139.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.8. 指令流水图",
+    "filename": "8.8. 指令流水图.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0087.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.9. 算子代码热点图",
+    "filename": "8.9. 算子代码热点图.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0088.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.10. 内存通路吞吐率波形图",
+    "filename": "8.10. 内存通路吞吐率波形图.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0160.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.11.1.1. ArithmeticUtilization（cube及vector类型指令耗时和占比）",
+    "filename": "8.11.1.1. ArithmeticUtilization（cube及vector类型指令耗时和占比）.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0093.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.11. 性能数据文件",
+      "8.11.1. msprof op"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.11.1.2. L2Cache（L2 Cache命中率）",
+    "filename": "8.11.1.2. L2Cache（L2 Cache命中率）.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0094.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.11. 性能数据文件",
+      "8.11.1. msprof op"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.11.1.3. Memory（内存读写带宽速率）",
+    "filename": "8.11.1.3. Memory（内存读写带宽速率）.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0095.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.11. 性能数据文件",
+      "8.11.1. msprof op"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.11.1.4. MemoryL0（L0读写带宽速率）",
+    "filename": "8.11.1.4. MemoryL0（L0读写带宽速率）.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0096.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.11. 性能数据文件",
+      "8.11.1. msprof op"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.11.1.5. MemoryUB（UB读写带宽速率）",
+    "filename": "8.11.1.5. MemoryUB（UB读写带宽速率）.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0097.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.11. 性能数据文件",
+      "8.11.1. msprof op"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.11.1.6. OpBasicInfo（算子基础信息）",
+    "filename": "8.11.1.6. OpBasicInfo（算子基础信息）.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0098.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.11. 性能数据文件",
+      "8.11.1. msprof op"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.11.1.7. PipeUtilization（计算单元和搬运单元耗时占比）",
+    "filename": "8.11.1.7. PipeUtilization（计算单元和搬运单元耗时占比）.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0099.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.11. 性能数据文件",
+      "8.11.1. msprof op"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.11.1.8. ResourceConflictRatio（资源冲突占比）",
+    "filename": "8.11.1.8. ResourceConflictRatio（资源冲突占比）.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0100.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.11. 性能数据文件",
+      "8.11.1. msprof op"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.11.2.1. 代码行耗时数据文件",
+    "filename": "8.11.2.1. 代码行耗时数据文件.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0101.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.11. 性能数据文件",
+      "8.11.2. msprof op simulator"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.11.2.2. 代码指令信息文件",
+    "filename": "8.11.2.2. 代码指令信息文件.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0102.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.11. 性能数据文件",
+      "8.11.2. msprof op simulator"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.12. Json配置文件说明",
+    "filename": "8.12. Json配置文件说明.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0104.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.13.1. 采集Ascend C算子的性能数据",
+    "filename": "8.13.1. 采集Ascend C算子的性能数据.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0090.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.13. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.13.2. 通过指令流水图优化算子",
+    "filename": "8.13.2. 通过指令流水图优化算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0091.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.13. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.13.3. 采集MC2算子的性能数据",
+    "filename": "8.13.3. 采集MC2算子的性能数据.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0140.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.13. 典型案例"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.14.1. mstx接口简介",
+    "filename": "8.14.1. mstx接口简介.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0129.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.14. 扩展接口（mstx）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.14.2. mstxRangeStartA",
+    "filename": "8.14.2. mstxRangeStartA.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0117.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.14. 扩展接口（mstx）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "8.14.3. mstxRangeEnd",
+    "filename": "8.14.3. mstxRangeEnd.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_16_0118.html",
+    "parent_sections": [
+      "8. 算子调优（msProf）",
+      "8.14. 扩展接口（mstx）"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "9.1.1. 基于msOpGen工具创建算子工程",
+    "filename": "9.1.1. 基于msOpGen工具创建算子工程.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_10_0024.html",
+    "parent_sections": [
+      "9. 附录",
+      "9.1. TBE&AI CPU算子开发场景"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "9.1.2.1. 简介",
+    "filename": "9.1.2.1. 简介.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_10_0088.html",
+    "parent_sections": [
+      "9. 附录",
+      "9.1. TBE&AI CPU算子开发场景",
+      "9.1.2. 算子编译部署"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "9.1.2.2. 算子工程编译",
+    "filename": "9.1.2.2. 算子工程编译.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_10_0089.html",
+    "parent_sections": [
+      "9. 附录",
+      "9.1. TBE&AI CPU算子开发场景",
+      "9.1.2. 算子编译部署"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "9.1.2.3. 算子交付件独立编译",
+    "filename": "9.1.2.3. 算子交付件独立编译.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_10_0090.html",
+    "parent_sections": [
+      "9. 附录",
+      "9.1. TBE&AI CPU算子开发场景",
+      "9.1.2. 算子编译部署"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "9.1.2.4. 算子包部署",
+    "filename": "9.1.2.4. 算子包部署.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_10_0091.html",
+    "parent_sections": [
+      "9. 附录",
+      "9.1. TBE&AI CPU算子开发场景",
+      "9.1.2. 算子编译部署"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "9.1.3.1. 简介",
+    "filename": "9.1.3.1. 简介.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_10_0096.html",
+    "parent_sections": [
+      "9. 附录",
+      "9.1. TBE&AI CPU算子开发场景",
+      "9.1.3. 基于msOpST工具进行算子ST测试"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "9.1.3.2. 生成测试用例定义文件",
+    "filename": "9.1.3.2. 生成测试用例定义文件.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_10_0097.html",
+    "parent_sections": [
+      "9. 附录",
+      "9.1. TBE&AI CPU算子开发场景",
+      "9.1.3. 基于msOpST工具进行算子ST测试"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "9.1.3.3. 生成/执行测试用例",
+    "filename": "9.1.3.3. 生成_执行测试用例.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_10_0098.html",
+    "parent_sections": [
+      "9. 附录",
+      "9.1. TBE&AI CPU算子开发场景",
+      "9.1.3. 基于msOpST工具进行算子ST测试"
+    ]
+  },
+  {
+    "main_section": "算子开发工具",
+    "full_title": "9.1.3.4. 测试用例定义文件配置样例",
+    "filename": "9.1.3.4. 测试用例定义文件配置样例.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/devaids/optool/atlasopdev_10_0099.html",
+    "parent_sections": [
+      "9. 附录",
+      "9.1. TBE&AI CPU算子开发场景",
+      "9.1.3. 基于msOpST工具进行算子ST测试"
+    ]
+  }
+]

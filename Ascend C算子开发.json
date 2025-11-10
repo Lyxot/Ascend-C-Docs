@@ -1,0 +1,940 @@
+[
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "1. Ascend C简介",
+    "filename": "1. Ascend C简介.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0001.html",
+    "parent_sections": []
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "2. 环境准备",
+    "filename": "2. 环境准备.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0002.html",
+    "parent_sections": []
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "3.1. HelloWorld",
+    "filename": "3.1. HelloWorld.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0004.html",
+    "parent_sections": [
+      "3. 快速入门"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "3.2. 基于Kernel直调工程的算子开发",
+    "filename": "3.2. 基于Kernel直调工程的算子开发.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0005.html",
+    "parent_sections": [
+      "3. 快速入门"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "3.3. 基于自定义算子工程的算子开发",
+    "filename": "3.3. 基于自定义算子工程的算子开发.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0006.html",
+    "parent_sections": [
+      "3. 快速入门"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "4. 抽象硬件架构",
+    "filename": "4. 抽象硬件架构.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0015.html",
+    "parent_sections": []
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "5.1. SPMD模型",
+    "filename": "5.1. SPMD模型.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0013.html",
+    "parent_sections": [
+      "5. 编程模型"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "5.2. 核函数",
+    "filename": "5.2. 核函数.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0014.html",
+    "parent_sections": [
+      "5. 编程模型"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "5.3. 编程范式",
+    "filename": "5.3. 编程范式.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0016.html",
+    "parent_sections": [
+      "5. 编程模型"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "5.4. 编程接口概述",
+    "filename": "5.4. 编程接口概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0018.html",
+    "parent_sections": [
+      "5. 编程模型"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.1. 概述",
+    "filename": "6.1. 概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0031.html",
+    "parent_sections": [
+      "6. 算子实现"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.1. 概述",
+    "filename": "6.2.1. 概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10001.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.2. 基础矢量算子",
+    "filename": "6.2.2. 基础矢量算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0033.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.3. TBuf的使用",
+    "filename": "6.2.3. TBuf的使用.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10003.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.4.1. 概述",
+    "filename": "6.2.4.1. 概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10005.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程",
+      "6.2.4. 多核&Tiling切分"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.4.2. 多核Tiling",
+    "filename": "6.2.4.2. 多核Tiling.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0035.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程",
+      "6.2.4. 多核&Tiling切分"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.4.3. 尾块Tiling",
+    "filename": "6.2.4.3. 尾块Tiling.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00009.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程",
+      "6.2.4. 多核&Tiling切分"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.4.4. 尾核Tiling",
+    "filename": "6.2.4.4. 尾核Tiling.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10008.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程",
+      "6.2.4. 多核&Tiling切分"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.4.5. 尾核&尾块",
+    "filename": "6.2.4.5. 尾核&尾块.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10009.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程",
+      "6.2.4. 多核&Tiling切分"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.5. DoubleBuffer场景",
+    "filename": "6.2.5. DoubleBuffer场景.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10010.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.6. Broadcast场景",
+    "filename": "6.2.6. Broadcast场景.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10011.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.2.7. 非对齐场景",
+    "filename": "6.2.7. 非对齐场景.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0034.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.2. 矢量编程"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.1. 基础知识",
+    "filename": "6.3.1. 基础知识.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0037.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.2. 算子实现",
+    "filename": "6.3.2. 算子实现.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0038.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.1. Matmul特性介绍",
+    "filename": "6.3.3.1. Matmul特性介绍.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10012.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.2. 多核对齐切分",
+    "filename": "6.3.3.2. 多核对齐切分.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10013.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.3. 多核非对齐切分",
+    "filename": "6.3.3.3. 多核非对齐切分.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10014.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.4. 异步场景处理",
+    "filename": "6.3.3.4. 异步场景处理.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10015.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.5. 矩阵乘输出的量化/反量化",
+    "filename": "6.3.3.5. 矩阵乘输出的量化_反量化.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10017.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.6. 矩阵乘输出的Channel拆分",
+    "filename": "6.3.3.6. 矩阵乘输出的Channel拆分.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10018.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.7. 矩阵向量乘",
+    "filename": "6.3.3.7. 矩阵向量乘.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10019.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.8. 4:2稀疏矩阵乘",
+    "filename": "6.3.3.8. 4:2稀疏矩阵乘.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10021.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.9. TSCM输入的矩阵乘",
+    "filename": "6.3.3.9. TSCM输入的矩阵乘.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10024.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.10. 矩阵乘输出的N方向对齐",
+    "filename": "6.3.3.10. 矩阵乘输出的N方向对齐.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10026.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.11. 单次矩阵乘局部输出",
+    "filename": "6.3.3.11. 单次矩阵乘局部输出.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10027.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.12. AIC和AIV独立运行机制",
+    "filename": "6.3.3.12. AIC和AIV独立运行机制.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10028.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.3.3.13. Batch Matmul基础功能",
+    "filename": "6.3.3.13. Batch Matmul基础功能.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0041.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.3. 矩阵编程（高阶API）",
+      "6.3.3. 特性场景"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.4.1. 耦合架构",
+    "filename": "6.4.1. 耦合架构.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00006.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.4. 矩阵编程（基础API）"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.4.2. 分离架构",
+    "filename": "6.4.2. 分离架构.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00007.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.4. 矩阵编程（基础API）"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.5.1. 基础知识",
+    "filename": "6.5.1. 基础知识.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0049.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.5. 融合算子编程"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.5.2. 算子实现",
+    "filename": "6.5.2. 算子实现.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0050.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.5. 融合算子编程"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.6.1. 概述",
+    "filename": "6.6.1. 概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0052.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.6. Kernel直调算子开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.6.2. Kernel直调",
+    "filename": "6.6.2. Kernel直调.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0056.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.6. Kernel直调算子开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.6.3. Pybind调用",
+    "filename": "6.6.3. Pybind调用.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0057.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.6. Kernel直调算子开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.7.1. 概述",
+    "filename": "6.7.1. 概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0059.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.7. 工程化算子开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.7.2. 创建算子工程",
+    "filename": "6.7.2. 创建算子工程.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0060.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.7. 工程化算子开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.7.3. 算子原型定义",
+    "filename": "6.7.3. 算子原型定义.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0062.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.7. 工程化算子开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.7.4. Kernel侧算子实现",
+    "filename": "6.7.4. Kernel侧算子实现.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0063.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.7. 工程化算子开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.7.5. Host侧tiling实现",
+    "filename": "6.7.5. Host侧tiling实现.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0064.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.7. 工程化算子开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.7.6.1. 算子工程编译",
+    "filename": "6.7.6.1. 算子工程编译.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0068.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.7. 工程化算子开发",
+      "6.7.6. 算子包编译"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.7.6.2. 算子包部署",
+    "filename": "6.7.6.2. 算子包部署.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0069.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.7. 工程化算子开发",
+      "6.7.6. 算子包编译"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.7.7. 算子动态库编译",
+    "filename": "6.7.7. 算子动态库编译.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00012.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.7. 工程化算子开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "6.7.8. 单算子API调用",
+    "filename": "6.7.8. 单算子API调用.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0070.html",
+    "parent_sections": [
+      "6. 算子实现",
+      "6.7. 工程化算子开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "7.1. 孪生调试简介",
+    "filename": "7.1. 孪生调试简介.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0072.html",
+    "parent_sections": [
+      "7. 算子调试调优"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "7.2. CPU域调试",
+    "filename": "7.2. CPU域调试.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0073.html",
+    "parent_sections": [
+      "7. 算子调试调优"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "7.3. NPU域调试调优",
+    "filename": "7.3. NPU域调试调优.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0075.html",
+    "parent_sections": [
+      "7. 算子调试调优"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "8.1. 概述",
+    "filename": "8.1. 概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0077.html",
+    "parent_sections": [
+      "8. 算子入图（GE图）开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "8.2. 开发流程",
+    "filename": "8.2. 开发流程.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0078.html",
+    "parent_sections": [
+      "8. 算子入图（GE图）开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "8.3. Tiling下沉",
+    "filename": "8.3. Tiling下沉.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00014.html",
+    "parent_sections": [
+      "8. 算子入图（GE图）开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "8.4. 图编译和图执行",
+    "filename": "8.4. 图编译和图执行.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0079.html",
+    "parent_sections": [
+      "8. 算子入图（GE图）开发"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "9.1. 概述",
+    "filename": "9.1. 概述.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0081.html",
+    "parent_sections": [
+      "9. AI框架算子适配"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "9.2. PyTorch框架",
+    "filename": "9.2. PyTorch框架.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0082.html",
+    "parent_sections": [
+      "9. AI框架算子适配"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "9.3.1. 适配插件开发",
+    "filename": "9.3.1. 适配插件开发.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0086.html",
+    "parent_sections": [
+      "9. AI框架算子适配",
+      "9.3. ONNX框架"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "9.3.2. 调用样例",
+    "filename": "9.3.2. 调用样例.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0087.html",
+    "parent_sections": [
+      "9. AI框架算子适配",
+      "9.3. ONNX框架"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "9.4. TensorFlow框架",
+    "filename": "9.4. TensorFlow框架.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0088.html",
+    "parent_sections": [
+      "9. AI框架算子适配"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "10.1. 术语表",
+    "filename": "10.1. 术语表.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00013.html",
+    "parent_sections": [
+      "10. 概念原理和术语"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "10.2.1. 算子基本概念",
+    "filename": "10.2.1. 算子基本概念.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0098.html",
+    "parent_sections": [
+      "10. 概念原理和术语",
+      "10.2. 神经网络和算子"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "10.2.2. 数据排布格式",
+    "filename": "10.2.2. 数据排布格式.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0099.html",
+    "parent_sections": [
+      "10. 概念原理和术语",
+      "10.2. 神经网络和算子"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "10.3.1. 基本架构",
+    "filename": "10.3.1. 基本架构.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0008.html",
+    "parent_sections": [
+      "10. 概念原理和术语",
+      "10.3. 硬件架构与数据处理原理"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "10.3.2. 计算单元",
+    "filename": "10.3.2. 计算单元.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0009.html",
+    "parent_sections": [
+      "10. 概念原理和术语",
+      "10.3. 硬件架构与数据处理原理"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "10.3.3. 存储单元",
+    "filename": "10.3.3. 存储单元.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0010.html",
+    "parent_sections": [
+      "10. 概念原理和术语",
+      "10.3. 硬件架构与数据处理原理"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "10.3.4. 控制单元",
+    "filename": "10.3.4. 控制单元.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0011.html",
+    "parent_sections": [
+      "10. 概念原理和术语",
+      "10.3. 硬件架构与数据处理原理"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "10.4. 编程模型设计原理",
+    "filename": "10.4. 编程模型设计原理.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00015.html",
+    "parent_sections": [
+      "10. 概念原理和术语"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "10.5.1. DoubleBuffer",
+    "filename": "10.5.1. DoubleBuffer.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0090.html",
+    "parent_sections": [
+      "10. 概念原理和术语",
+      "10.5. 性能优化技术原理"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.1. 如何开发动态输入算子",
+    "filename": "11.1. 如何开发动态输入算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00005.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.2. 如何在矢量编程时使能Vector Core",
+    "filename": "11.2. 如何在矢量编程时使能Vector Core.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0100.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.3. 如何开发通算融合算子",
+    "filename": "11.3. 如何开发通算融合算子.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0095.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.4. 如何使用Tensor高维切分计算API",
+    "filename": "11.4. 如何使用Tensor高维切分计算API.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0022.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.5. 如何使用归约指令",
+    "filename": "11.5. 如何使用归约指令.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0023.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.6. 如何使用掩码操作API",
+    "filename": "11.6. 如何使用掩码操作API.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0024.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.7. 如何使用workspace",
+    "filename": "11.7. 如何使用workspace.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0092.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.8. 如何进行Tiling调测",
+    "filename": "11.8. 如何进行Tiling调测.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00018.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.9. 如何使用SPM Buffer",
+    "filename": "11.9. 如何使用SPM Buffer.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0093.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.10. 如何使用更底层编程方式提升算子性能",
+    "filename": "11.10. 如何使用更底层编程方式提升算子性能.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00019.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "11.11. 如何使用Tensor原地操作提升算子性能",
+    "filename": "11.11. 如何使用Tensor原地操作提升算子性能.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00020.html",
+    "parent_sections": [
+      "11. 常用操作"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "12.1. 简易自定义算子工程",
+    "filename": "12.1. 简易自定义算子工程.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0101.html",
+    "parent_sections": [
+      "12. 附录"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "12.2. show_kernel_debug_data工具",
+    "filename": "12.2. show_kernel_debug_data工具.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0102.html",
+    "parent_sections": [
+      "12. 附录"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "12.3. msobjdump工具",
+    "filename": "12.3. msobjdump工具.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0103.html",
+    "parent_sections": [
+      "12. 附录"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "13.1. 核函数运行验证时算子存在精度问题",
+    "filename": "13.1. 核函数运行验证时算子存在精度问题.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0106.html",
+    "parent_sections": [
+      "13. FAQ"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "13.2. 运行验证时AllocTensor/FreeTensor失败",
+    "filename": "13.2. 运行验证时AllocTensor_FreeTensor失败.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0107.html",
+    "parent_sections": [
+      "13. FAQ"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "13.3. kernel侧获取Tiling信息不正确",
+    "filename": "13.3. kernel侧获取Tiling信息不正确.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0108.html",
+    "parent_sections": [
+      "13. FAQ"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "13.4. Kernel编译时报错“error: out of jump/jumpc imm range”",
+    "filename": "13.4. Kernel编译时报错“error: out of jump_jumpc imm range”.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0109.html",
+    "parent_sections": [
+      "13. FAQ"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "13.5. 使用跨版本的自定义算子包时，含有Matmul高阶API的算子存在编译或执行报错",
+    "filename": "13.5. 使用跨版本的自定义算子包时，含有Matmul高阶API的算子存在编译或执行报错.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0110.html",
+    "parent_sections": [
+      "13. FAQ"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "13.6. 含有Matmul高阶API的算子精度问题",
+    "filename": "13.6. 含有Matmul高阶API的算子精度问题.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0111.html",
+    "parent_sections": [
+      "13. FAQ"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "13.7. 算子工程编译时出现文件名过长报错",
+    "filename": "13.7. 算子工程编译时出现文件名过长报错.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0112.html",
+    "parent_sections": [
+      "13. FAQ"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "13.8. 调用算子时出现无法打开config.ini的报错",
+    "filename": "13.8. 调用算子时出现无法打开config.ini的报错.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00003.html",
+    "parent_sections": [
+      "13. FAQ"
+    ]
+  },
+  {
+    "main_section": "Ascend C算子开发",
+    "full_title": "13.9. 算子包部署时出现权限不足报错",
+    "filename": "13.9. 算子包部署时出现权限不足报错.md",
+    "url": "https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00004.html",
+    "parent_sections": [
+      "13. FAQ"
+    ]
+  }
+]

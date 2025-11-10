@@ -1,0 +1,121 @@
+# Ascend C算子开发
+* 1. [Ascend C简介](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0001.html)
+* 2. [环境准备](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0002.html)
+* 3. 快速入门
+  * 3.1. [HelloWorld](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0004.html)
+  * 3.2. [基于Kernel直调工程的算子开发](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0005.html)
+  * 3.3. [基于自定义算子工程的算子开发](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0006.html)
+* 4. [抽象硬件架构](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0015.html)
+* 5. 编程模型
+  * 5.1. [SPMD模型](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0013.html)
+  * 5.2. [核函数](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0014.html)
+  * 5.3. [编程范式](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0016.html)
+  * 5.4. [编程接口概述](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0018.html)
+* 6. 算子实现
+  * 6.1. [概述](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0031.html)
+  * 6.2. 矢量编程
+    * 6.2.1. [概述](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10001.html)
+    * 6.2.2. [基础矢量算子](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0033.html)
+    * 6.2.3. [TBuf的使用](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10003.html)
+    * 6.2.4. 多核&Tiling切分
+      * 6.2.4.1. [概述](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10005.html)
+      * 6.2.4.2. [多核Tiling](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0035.html)
+      * 6.2.4.3. [尾块Tiling](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00009.html)
+      * 6.2.4.4. [尾核Tiling](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10008.html)
+      * 6.2.4.5. [尾核&尾块](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10009.html)
+    * 6.2.5. [DoubleBuffer场景](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10010.html)
+    * 6.2.6. [Broadcast场景](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10011.html)
+    * 6.2.7. [非对齐场景](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0034.html)
+  * 6.3. 矩阵编程（高阶API）
+    * 6.3.1. [基础知识](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0037.html)
+    * 6.3.2. [算子实现](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0038.html)
+    * 6.3.3. 特性场景
+      * 6.3.3.1. [Matmul特性介绍](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10012.html)
+      * 6.3.3.2. [多核对齐切分](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10013.html)
+      * 6.3.3.3. [多核非对齐切分](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10014.html)
+      * 6.3.3.4. [异步场景处理](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10015.html)
+      * 6.3.3.5. [矩阵乘输出的量化/反量化](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10017.html)
+      * 6.3.3.6. [矩阵乘输出的Channel拆分](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10018.html)
+      * 6.3.3.7. [矩阵向量乘](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10019.html)
+      * 6.3.3.8. [4:2稀疏矩阵乘](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10021.html)
+      * 6.3.3.9. [TSCM输入的矩阵乘](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10024.html)
+      * 6.3.3.10. [矩阵乘输出的N方向对齐](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10026.html)
+      * 6.3.3.11. [单次矩阵乘局部输出](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10027.html)
+      * 6.3.3.12. [AIC和AIV独立运行机制](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_10028.html)
+      * 6.3.3.13. [Batch Matmul基础功能](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0041.html)
+  * 6.4. 矩阵编程（基础API）
+    * 6.4.1. [耦合架构](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00006.html)
+    * 6.4.2. [分离架构](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00007.html)
+  * 6.5. 融合算子编程
+    * 6.5.1. [基础知识](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0049.html)
+    * 6.5.2. [算子实现](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0050.html)
+  * 6.6. Kernel直调算子开发
+    * 6.6.1. [概述](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0052.html)
+    * 6.6.2. [Kernel直调](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0056.html)
+    * 6.6.3. [Pybind调用](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0057.html)
+  * 6.7. 工程化算子开发
+    * 6.7.1. [概述](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0059.html)
+    * 6.7.2. [创建算子工程](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0060.html)
+    * 6.7.3. [算子原型定义](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0062.html)
+    * 6.7.4. [Kernel侧算子实现](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0063.html)
+    * 6.7.5. [Host侧tiling实现](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0064.html)
+    * 6.7.6. 算子包编译
+      * 6.7.6.1. [算子工程编译](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0068.html)
+      * 6.7.6.2. [算子包部署](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0069.html)
+    * 6.7.7. [算子动态库编译](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00012.html)
+    * 6.7.8. [单算子API调用](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0070.html)
+* 7. 算子调试调优
+  * 7.1. [孪生调试简介](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0072.html)
+  * 7.2. [CPU域调试](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0073.html)
+  * 7.3. [NPU域调试调优](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0075.html)
+* 8. 算子入图（GE图）开发
+  * 8.1. [概述](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0077.html)
+  * 8.2. [开发流程](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0078.html)
+  * 8.3. [Tiling下沉](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00014.html)
+  * 8.4. [图编译和图执行](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0079.html)
+* 9. AI框架算子适配
+  * 9.1. [概述](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0081.html)
+  * 9.2. [PyTorch框架](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0082.html)
+  * 9.3. ONNX框架
+    * 9.3.1. [适配插件开发](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0086.html)
+    * 9.3.2. [调用样例](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0087.html)
+  * 9.4. [TensorFlow框架](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0088.html)
+* 10. 概念原理和术语
+  * 10.1. [术语表](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00013.html)
+  * 10.2. 神经网络和算子
+    * 10.2.1. [算子基本概念](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0098.html)
+    * 10.2.2. [数据排布格式](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0099.html)
+  * 10.3. 硬件架构与数据处理原理
+    * 10.3.1. [基本架构](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0008.html)
+    * 10.3.2. [计算单元](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0009.html)
+    * 10.3.3. [存储单元](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0010.html)
+    * 10.3.4. [控制单元](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0011.html)
+  * 10.4. [编程模型设计原理](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00015.html)
+  * 10.5. 性能优化技术原理
+    * 10.5.1. [DoubleBuffer](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0090.html)
+* 11. 常用操作
+  * 11.1. [如何开发动态输入算子](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00005.html)
+  * 11.2. [如何在矢量编程时使能Vector Core](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0100.html)
+  * 11.3. [如何开发通算融合算子](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0095.html)
+  * 11.4. [如何使用Tensor高维切分计算API](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0022.html)
+  * 11.5. [如何使用归约指令](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0023.html)
+  * 11.6. [如何使用掩码操作API](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0024.html)
+  * 11.7. [如何使用workspace](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0092.html)
+  * 11.8. [如何进行Tiling调测](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00018.html)
+  * 11.9. [如何使用SPM Buffer](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0093.html)
+  * 11.10. [如何使用更底层编程方式提升算子性能](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00019.html)
+  * 11.11. [如何使用Tensor原地操作提升算子性能](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00020.html)
+* 12. 附录
+  * 12.1. [简易自定义算子工程](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0101.html)
+  * 12.2. [show_kernel_debug_data工具](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0102.html)
+  * 12.3. [msobjdump工具](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0103.html)
+* 13. FAQ
+  * 13.1. [核函数运行验证时算子存在精度问题](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0106.html)
+  * 13.2. [运行验证时AllocTensor/FreeTensor失败](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0107.html)
+  * 13.3. [kernel侧获取Tiling信息不正确](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0108.html)
+  * 13.4. [Kernel编译时报错“error: out of jump/jumpc imm range”](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0109.html)
+  * 13.5. [使用跨版本的自定义算子包时，含有Matmul高阶API的算子存在编译或执行报错](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0110.html)
+  * 13.6. [含有Matmul高阶API的算子精度问题](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0111.html)
+  * 13.7. [算子工程编译时出现文件名过长报错](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_0112.html)
+  * 13.8. [调用算子时出现无法打开config.ini的报错](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00003.html)
+  * 13.9. [算子包部署时出现权限不足报错](https://www.hiascend.com/doc_center/source/zh/CANNCommunityEdition/82RC1/opdevg/Ascendcopdevg/atlas_ascendc_10_00004.html)
