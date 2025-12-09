@@ -13,7 +13,7 @@ from pathlib import Path
 import tempfile
 
 
-def convert_html_to_markdown(content, model=None, debug=False, project=None, use_qwen=False):
+def convert_html_to_markdown(content, model=None, debug=False, project=None, use_qwen=False, use_cursor_agent=False):
     """
     使用 Gemini CLI 或 Qwen Code 将 HTML 内容转换为 Markdown（从内容字符串）
     
@@ -34,7 +34,14 @@ def convert_html_to_markdown(content, model=None, debug=False, project=None, use
     
     try:
         # 调用文件版本的函数
-        result = convert_html_to_markdown_from_file(tmp_file_path, model=model, debug=debug, project=project, use_qwen=use_qwen)
+        result = convert_html_to_markdown_from_file(
+            tmp_file_path,
+            model=model,
+            debug=debug,
+            project=project,
+            use_qwen=use_qwen,
+            use_cursor_agent=use_cursor_agent,
+        )
         return result
     finally:
         # 清理临时文件
@@ -44,7 +51,7 @@ def convert_html_to_markdown(content, model=None, debug=False, project=None, use
             pass
 
 
-def convert_html_to_markdown_from_file(file_path, model=None, debug=False, project=None, use_qwen=False):
+def convert_html_to_markdown_from_file(file_path, model=None, debug=False, project=None, use_qwen=False, use_cursor_agent=False):
     """
     使用 Gemini CLI 或 Qwen Code 将 HTML 内容转换为 Markdown（从文件）
     
@@ -79,21 +86,39 @@ def convert_html_to_markdown_from_file(file_path, model=None, debug=False, proje
 以下为Markdown文档:
 
 """
-    
-    # 转义单引号以避免 shell 问题
-    escaped_prompt = system_prompt.replace("'", "'\\''")
-    escaped_file_path = file_path.replace("'", "'\\''")
+    # 将 system_prompt 与原文件内容写入一个临时文件，通过管道传入
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            original_content = f.read()
+    except Exception as e:
+        print(f"错误: 读取文件失败 {file_path}: {e}")
+        return None
+
+    try:
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', suffix='.md', delete=False) as tmp_mix:
+            tmp_mix.write(system_prompt)
+            tmp_mix.write(original_content)
+            tmp_mix_path = tmp_mix.name
+    except Exception as e:
+        print(f"错误: 创建临时文件失败: {e}")
+        return None
+
+    escaped_file_path = tmp_mix_path.replace("'", "'\\''")
     
     # 构建命令 - 使用 cat 和管道符传入文件内容
     # 根据参数构建命令
     cmd_parts = [f"cat '{escaped_file_path}' |"]
     
     # 确定使用的 CLI 工具
-    cli_name = "qwen" if use_qwen else "gemini"
-    cli_display = "Qwen Code" if use_qwen else "Gemini CLI"
+    if use_cursor_agent:
+        cli_name = "cursor-agent"
+        cli_display = "Cursor Agent"
+    else:
+        cli_name = "qwen" if use_qwen else "gemini"
+        cli_display = "Qwen Code" if use_qwen else "Gemini CLI"
     
     # 添加 GOOGLE_CLOUD_PROJECT 环境变量（如果指定且使用 Gemini）
-    if project and not use_qwen:
+    if project and not use_qwen and not use_cursor_agent:
         cmd_parts.append(f"GOOGLE_CLOUD_PROJECT={project}")
     
     # 添加 CLI 命令
@@ -104,7 +129,10 @@ def convert_html_to_markdown_from_file(file_path, model=None, debug=False, proje
         cmd_parts.append(f"--model {model}")
     
     # 添加 prompt
-    cmd_parts.append(f"--prompt '{escaped_prompt}'")
+    if use_cursor_agent:
+        cmd_parts.append(f"-p ")
+    else:
+        cmd_parts.append(f"--prompt ")
     
     cmd = " ".join(cmd_parts)
     
@@ -195,6 +223,11 @@ def convert_html_to_markdown_from_file(file_path, model=None, debug=False, proje
             import traceback
             traceback.print_exc()
         return None
+    finally:
+        try:
+            os.unlink(tmp_mix_path)
+        except Exception:
+            pass
 
 
 def check_already_converted(content):
@@ -220,7 +253,7 @@ def check_already_converted(content):
     return False
 
 
-def convert_file_with_gemini(file_path, model=None, output_path=None, force=False, debug=False, project=None, use_qwen=False):
+def convert_file_with_gemini(file_path, model=None, output_path=None, force=False, debug=False, project=None, use_qwen=False, use_cursor_agent=False):
     """
     使用 Gemini CLI 或 Qwen Code 将文件转换为 Markdown
     
@@ -257,7 +290,7 @@ def convert_file_with_gemini(file_path, model=None, output_path=None, force=Fals
         return 'skipped'
     
     # 调用核心转换函数
-    cli_display = "Qwen Code" if use_qwen else "Gemini CLI"
+    cli_display = "Cursor Agent" if use_cursor_agent else ("Qwen Code" if use_qwen else "Gemini CLI")
     if not debug:
         model_info = f"调用模型: {model}" if model else f"调用 {cli_display}"
         print(model_info)
@@ -271,7 +304,14 @@ def convert_file_with_gemini(file_path, model=None, output_path=None, force=Fals
         print(f"[DEBUG] 文件大小: {file_size} 字节")
     
     try:
-        converted_content = convert_html_to_markdown_from_file(file_path, model, debug=debug, project=project, use_qwen=use_qwen)
+        converted_content = convert_html_to_markdown_from_file(
+            file_path,
+            model,
+            debug=debug,
+            project=project,
+            use_qwen=use_qwen,
+            use_cursor_agent=use_cursor_agent,
+        )
         
         if not converted_content:
             print("警告: 模型返回空内容")
@@ -342,7 +382,7 @@ def collect_files_from_json(json_path, limit=None):
     return file_paths
 
 
-def process_files(file_paths, model=None, output_dir=None, overwrite=False, force=False, debug=False, project=None, use_qwen=False):
+def process_files(file_paths, model=None, output_dir=None, overwrite=False, force=False, debug=False, project=None, use_qwen=False, use_cursor_agent=False):
     """
     批量处理多个文件
     
@@ -391,7 +431,16 @@ def process_files(file_paths, model=None, output_dir=None, overwrite=False, forc
         
         # 转换文件
         try:
-            converted_content = convert_file_with_gemini(file_path, model, output_path=output_path, force=force, debug=debug, project=project, use_qwen=use_qwen)
+            converted_content = convert_file_with_gemini(
+                file_path,
+                model,
+                output_path=output_path,
+                force=force,
+                debug=debug,
+                project=project,
+                use_qwen=use_qwen,
+                use_cursor_agent=use_cursor_agent,
+            )
             
             if converted_content == 'skipped':
                 skipped += 1
@@ -442,6 +491,11 @@ def main():
         '--use-qwen',
         action='store_true',
         help='使用 Qwen Code CLI 而非 Gemini CLI（默认使用 Gemini）'
+    )
+    parser.add_argument(
+        '--use-cursor-agent',
+        action='store_true',
+        help='使用 cursor-agent CLI（格式: cursor-agent --model ${model} -p ${prompt}）'
     )
     parser.add_argument(
         '--from-json',
@@ -501,7 +555,7 @@ def main():
         print(f"[DRY RUN] 找到 {len(file_paths)} 个文件:")
         for i, fp in enumerate(file_paths, 1):
             print(f"  [{i}] {fp}")
-        cli_display = "Qwen Code" if args.use_qwen else "Gemini CLI"
+        cli_display = "Cursor Agent" if args.use_cursor_agent else ("Qwen Code" if args.use_qwen else "Gemini CLI")
         model_info = f"模型: {args.model}" if args.model else f"模型: 由 {cli_display} 决定"
         print(f"\nCLI: {cli_display}")
         print(f"{model_info}")
@@ -527,7 +581,16 @@ def main():
             output_path = f"{base_path}.converted.md"
         
         # 转换文件
-        converted_content = convert_file_with_gemini(single_file, args.model, output_path=output_path, force=args.force, debug=args.debug, project=args.project, use_qwen=args.use_qwen)
+        converted_content = convert_file_with_gemini(
+            single_file,
+            args.model,
+            output_path=output_path,
+            force=args.force,
+            debug=args.debug,
+            project=args.project,
+            use_qwen=args.use_qwen,
+            use_cursor_agent=args.use_cursor_agent,
+        )
         
         if converted_content == 'skipped':
             print("文件已转换过，使用 --force 强制转换")
@@ -541,7 +604,17 @@ def main():
     else:
         # 批量处理文件
         output_dir = args.output if args.output else None
-        process_files(file_paths, args.model, output_dir, args.overwrite, args.force, args.debug, args.project, args.use_qwen)
+        process_files(
+            file_paths,
+            args.model,
+            output_dir,
+            args.overwrite,
+            args.force,
+            args.debug,
+            args.project,
+            args.use_qwen,
+            args.use_cursor_agent,
+        )
 
 
 if __name__ == '__main__':
